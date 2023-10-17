@@ -2,7 +2,8 @@ import './index.scss';
 import { Link, NavLink } from "react-router-dom";
 import LogoS from "../../assets/images/logo-s.png";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faHome,faAddressCard,faMessage } from "@fortawesome/free-solid-svg-icons";
+import { faHome,faAddressCard,faMessage,faEnvelope } from "@fortawesome/free-solid-svg-icons";
+import { faGithub, faLinkedin} from "@fortawesome/free-brands-svg-icons";
 
 const Sidebar = () => (
     <div className='nav-bar'>
@@ -23,8 +24,30 @@ const Sidebar = () => (
             </NavLink>
 
         </nav>
+        <ul>
+        <li>
+                <a target='_blank'
+                rel="noreferrer" 
+                href='mailto:gerard.masdeu2000@gmail.com?subject=You%are%hired'>
+                <FontAwesomeIcon icon={faEnvelope} color='#4d4d4e' />
+                </a>
+            </li>
+            <li>
+                <a target='_blank'
+                rel="noreferrer" 
+                href='https://www.linkedin.com/in/gerard-masdeu-delgado/'>
+                <FontAwesomeIcon icon={faLinkedin} color='#4d4d4e' />
+                </a>
+            </li>
+            <li>
+                <a target='_blank'
+                rel="noreferrer" 
+                href='https://github.com/GerardMasdeu'>
+                <FontAwesomeIcon icon={faGithub} color='#4d4d4e' />
+                </a>
+            </li>
+        </ul>
     </div>
 )
-      
 
 export default Sidebar;
