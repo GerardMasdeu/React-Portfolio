@@ -8,6 +8,14 @@
         max-height: 90%;
     }
     h1{
+        color: antiquewhite;
+        font-size: 53px;
+        font-family: 'coolvetica', arial, helvetica;
+        font-weight: 400;
+
+        &::before{
+            content:'<h1>';
+        }
         img{
             width: 32px;
             height: auto;
